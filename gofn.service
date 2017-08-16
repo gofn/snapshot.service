@@ -1,6 +1,7 @@
 [Unit]
 Description=gofn snapshot
-After=network.target network-online.target docker.service
+Before=docker.service
+After=network.target network-online.target
 Requires=network.target network-online.target docker.service
 
 [Service]
