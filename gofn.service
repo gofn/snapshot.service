@@ -1,0 +1,10 @@
+[Unit]
+Description=gofn snapshot
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh /root/snapshot.service/snapshot.sh.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
