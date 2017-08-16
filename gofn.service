@@ -1,7 +1,7 @@
 [Unit]
 Description=gofn snapshot
-After=network.target network-online.target
-Requires=network.target network-online.target
+After=network.target network-online.target docker.service
+Requires=network.target network-online.target docker.service
 
 [Service]
 Type=oneshot
