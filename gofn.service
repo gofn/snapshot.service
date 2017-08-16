@@ -3,7 +3,7 @@ Description=gofn snapshot
 
 [Service]
 Type=oneshot
-ExecStart=/bin/sh /root/snapshot.service/snapshot.sh.sh
+ExecStart=/bin/sh /usr/local/bin/snapshot.sh
 RemainAfterExit=yes
 
 [Install]
